@@ -1,9 +1,158 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html{
+	height: 100%;
+
+}
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
+	height: 100vh;
+
+
 }
 
 a {
-	color:red;
+	list-style: none; /* remove underline */
+	text-decoration: none;        /* Remove Underline for all */
+	color: white;
+
 }
 
+.main {
+
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+}
+
+
+.title{
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	padding: 5%;
+
+		text-align: center;
+
+
+
+}
+
+
+#headerContent{
+
+	/* aligns text to center of div */
+	text-align: center;
+
+	/* Puts content next to eachother */
+	display: inline-block;
+
+	padding: 30px;
+
+	background-color: black;
+	color: white;
+
+	/* rounds edges */
+
+   border: 1px solid white;
+   border-radius: 100px;
+
+
+}
+
+.siriImage{
+	width: 40%;
+	text-align: center;
+}
+
+
+.sideBar{
+  width: 25%;
+	background-color: black;
+ 	height: 80vh;
+	text-decoration: none;
+
+
+}
+
+.link {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: margin-left 1s;
+	color: white;
+	list-style: none; /* remove underline */
+	text-decoration: none;
+
+}
+
+.link:hover {
+  background-color: black;
+  color: white;
+  margin-left: 5px;
+  transition: margin-left 1s;
+}
+
+.page {
+  width: 75%;
+  height: 70vh;
+}
+
+
+.bubble {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.inner {
+  margin: 60px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 100px;
+  text-align: center;
+  height: 100%;
+  overflow: scroll;
+	overflow-x: hidden;
+
+
+}
+/*
+.inner::-webkit-scrollbar {
+  width: 12px;
+
+}
+
+.inner::-webkit-scrollbar-track {
+  background: orange;
+
+}
+
+.inner::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+} */
+/*
+.subtitle {
+  color: blue;
+} */
+
+.content {
+  margin-top: 60px;
+  font-size: 60px;
+}
+
+.figure {
+  width:100%;
+}
+
+.figure img {
+  width:100%;
+}
