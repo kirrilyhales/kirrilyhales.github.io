@@ -1,6 +1,10 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~ GLOBAL STYLES ~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 html, body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 html{
 	height: 100%;
@@ -18,28 +22,60 @@ a {
 	list-style: none; /* remove underline */
 	text-decoration: none;        /* Remove Underline for all */
 	color: white;
-
 }
+
+p{
+  font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    line-height: 25px;
+    text-align: left;
+    font-weight: 300;
+}
+
+h1{
+    font-family: 'Inconsolata', monospace;
+}
+
+h2{
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
+  letter-spacing: 7px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .main {
 
   display: flex;
   flex-wrap: wrap;
 
-
-
 }
 
+/* Created Blur subclass to blur page content */
+#blurSection{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Blur styles to be toggled on and off through JavaScript */
+.blur{
+  filter: blur(10px);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~ TITLE SECTION ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .title{
 	background-color: black;
 	width: 100%;
 	height: 200px;
-	padding: 5%;
+	padding: 3% 0px 3% 0px;
 
-		text-align: center;
-
-
+	text-align: center;
 
 }
 
@@ -52,7 +88,7 @@ a {
 	/* Puts content next to eachother */
 	display: inline-block;
 
-	padding: 30px;
+
 
 	background-color: black;
 	color: white;
@@ -60,35 +96,72 @@ a {
 	/* rounds edges */
 
    border: 1px solid white;
-   border-radius: 100px;
+   border-radius: 20px;
 
+   height: 125px;
+
+   width: 45%;
+
+
+}
+
+.geoGraphicsTitle{
+  font-size: 60px;
+  letter-spacing: 20px;
+  	padding: 30px;
+    margin-top: 8px;
+      font-weight: bold;
 
 }
 
 .siriImage{
-	width: 40%;
-	text-align: center;
+  padding-top: 30px;
+
 }
+
+.siri{
+
+  height:60px;
+  width: 825px;
+  overflow: hidden;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~ SIDE BAR SECTION ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 .sideBar{
-  width: 25%;
+  width: 15%;
+
+  padding-top: 50px;
 	background-color: black;
  	height: 80vh;
 	text-decoration: none;
 
-
+  font-size: 20px;
 }
+
+/*links */
 
 .link {
   padding: 20px;
   margin: 20px;
   border: 1px solid white;
   border-radius: 50px;
+
+  text-align: center;
+
   transition: margin-left 1s;
 	color: white;
+
 	list-style: none; /* remove underline */
 	text-decoration: none;
+
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+
+   font-style: italic;
 
 }
 
@@ -99,60 +172,389 @@ a {
   transition: margin-left 1s;
 }
 
-.page {
-  width: 75%;
+#subjectTitle{
+
+  /* padding-bottom: 2%;
+  padding-top: 2%; */
+
+  font-family: 'Inconsolata', monospace;
+  font-size: 60px;
+
+  letter-spacing: 5px;
+  font-weight: bold;
+
+  transform: scaleY(0.7);
+}
+
+.itsAMaterialWorldHeading{
+    padding-top: 5%;
+}
+
+.purchaseTitle{
+  padding-bottom: 5%;
+}
+
+.iPhoneButtonImage{
+  margin-top: 100px;
+
+  min-width: 300px;
+  height: 300px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ PAGE CONTENT SECTION ~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.pageContent {
+  background-color: black;
+
+  width: 85%;
   height: 70vh;
+
+    display: flex;
 }
 
-
-.bubble {
-  padding: 20px;
-  border: 1px solid black;
-  border-radius: 50px;
-}
-
+  /* INNER */
 .inner {
-  margin: 60px;
-  padding: 20px;
-  border: 1px solid black;
-  border-radius: 100px;
+  background-color: black;
+
+  margin: 30px;
+  padding: 60px;
+
+  color: white;
+
+  border: 1px solid white;
+  border-radius: 30px;
+
+
   text-align: center;
   height: 100%;
+
+  /* scroll and hide x axis scroll feature */
   overflow: scroll;
 	overflow-x: hidden;
 
+  width: 70%;
+
+  line-height: 40px;
 
 }
-/*
+.informationParagraph{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.imageContainer{
+  text-align: center;
+  /* background-color: #0666a3; */
+
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+
+}
+
+.stackImage{
+  height: 50%;
+  width: 50%;
+}
+
+.coverImage{
+  height: 100%;
+  width: 100%;
+}
+
+.page{
+  height: 90%;
+  width: 90%;
+}
+
+
+.backgroundsImage{
+  height: 60%;
+  width: 60%;
+}
+.metalIconsImage{
+  height: 60%;
+  width: 60%;
+}
+
+.loadingIconsImage{
+  height: 90%;
+  width: 90%;
+}
+
+.video{
+  height: 90%;
+  width: 90%;
+}
+
+.price {
+  text-align: left;
+}
+.pp {
+  text-align: left;
+}
+.mm {
+  text-align: left;
+}
+
+
+
+
+  /* scroll bar styles */
+  /* found on stackOverflow */
+
+
 .inner::-webkit-scrollbar {
   width: 12px;
-
+  height: 100px;
 }
 
 .inner::-webkit-scrollbar-track {
-  background: orange;
-
 }
 
 .inner::-webkit-scrollbar-thumb {
-  background-color: blue;
+  background-color: white;
   border-radius: 20px;
-  border: 3px solid orange;
-} */
-/*
-.subtitle {
-  color: blue;
-} */
 
-.content {
-  margin-top: 60px;
-  font-size: 60px;
+  width:20%;
 }
 
-.figure {
-  width:100%;
+  /* BATTERY PACK */
+
+.batteryPack{
+  width: 20%;
+  height: 100%;
+
+
+  /* background-color: grey; */
+
+  margin: 15px;
+
+  /* padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 60px; */
+
+  /* Cleaner way of writing above padding styles */
+  padding: 60px 30px 30px 30px;
 }
 
-.figure img {
-  width:100%;
+.batteryImage{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.lowBatteryPackImageContainer{
+
+}
+.navigation{
+  margin-top: 140px;
+  margin-left: 64.9%;
+  position: absolute;
+}
+
+
+.chapterLink{
+
+  padding: 20px 60px 20px 60px;
+
+  margin: 30px 40px 10px 32px;
+
+  border: 3px solid white;
+  border-radius: 10px;
+
+  text-align: center;
+
+  transition: margin-left 1s;
+	color: white;
+
+	list-style: none; /* remove underline */
+	text-decoration: none;
+
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+
+}
+
+.chapterLink:hover{
+
+  border: 3px solid red;
+
+}
+
+
+
+.studentLinkText{
+  padding: 10px;
+  margin: 10px;
+
+
+
+  font-size: 15px;
+  letter-spacing: 5px;
+
+  border: 1px solid white;
+  border-radius: 50px;
+
+  text-align: center;
+
+	color: white;
+
+	list-style: none;
+	text-decoration: none;
+}
+
+.studentLink{
+  margin: 30px 0px 30px 0px;
+
+  list-style: none;
+	text-decoration: none;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~ POP UP INFORMATION ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~ General Pop Up Styles ~~~~~~~~ */
+
+  /* Eveything within .chapterPopUpBox */
+.chapterPopUpBox{
+  /* hidden on initial load */
+  display: none;
+
+  width: 1400px;
+  height:700px;
+  background-color: black;
+
+  position: absolute;
+
+  margin-top: 10%;
+  margin-left: 10%;
+
+  border:  1px solid white;
+
+  border-radius: 30px;
+}
+
+/* ~~~ bar at top of window ~~~  */
+.windowBar{
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+
+  flex-shrink: 1;
+  min-width: 0;
+  background-color: #e8e8e8;
+  flex-grow: 1;
+  justify-content: center;
+  border:  1px solid #4a4a4a;
+
+
+  /* Top Left, Top Right, Bottom Right, Botton Left */
+  border-radius: 30px 30px 0px 0px
+}
+
+/* ~~~ lines withing bar at top of window ~~~  */
+.windowBarLines{
+  width: 100%;
+  background-image: repeating-linear-gradient(45deg,currentColor,currentColor 0.5px,transparent 0,transparent 50%);
+  background-size: 5px 5px;
+  justify-content: center;
+}
+
+/* ~~~ Title witjin windowBar class ~~~  */
+.windowTitle{
+
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+
+  /* margin-left: 30%;
+  margin-right: 35%;
+  margin-top: 3px;
+  margin-bottom: 3px; see below a cleaner way of writing these margins */
+
+  margin: 3px 35% 3px 35%;
+
+
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(37, 37, 37);
+  background-color: #e8e8e8;
+
+  border:  1px solid #4a4a4a;
+  border-radius: 10px;
+}
+
+/* ~~~ bar at bottom of window ~~~  */
+
+.windowBottomBar{
+  position: absolute;
+
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+
+  flex-shrink: 1;
+  min-width: 0;
+  background-color: #e8e8e8;
+  flex-grow: 1;
+  justify-content: center;
+  border:  1px solid #4a4a4a;
+
+  bottom: 0;
+
+  height:25px;
+
+
+  /* Top Left, Top Right, Bottom Right, Botton Left */
+  border-radius: 0px 0px 30px 30px
+}
+
+.chapterClose{
+
+  /* Top Left, Top Right, Bottom Right, Botton Left */
+  border-radius: 0px 30px 0px 0px;
+  width: 60px;
+  text-align: center;
+
+  border:  1px solid #4a4a4a;
+
+
+}
+
+.chapterClose:hover{
+
+    color: red;
+    /* background-color: #1af2ff; */
+    text-shadow: 0 0 3px black;
+
+}
+
+
+/* Show styles to be toggled off using JavaScpt*/
+.show {
+  display: block;
+}
+
+/* ~~~~~~~~ Chapter 1 ~~~~~~~~ */
+
+.chapter1popupContent {
+  display: none;
 }

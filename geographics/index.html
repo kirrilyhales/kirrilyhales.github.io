@@ -8,6 +8,10 @@
   	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
   	<script src="assets/js/jquery-3.4.1.min.js"></script>
   	<script src="assets/js/main.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;500&display=swap" rel="stylesheet">
   </head>
 
 
@@ -16,76 +20,244 @@
   <body>
     <!-- Everything sits within here i.e. 'main' -->
     <div class="main">
+      <div id="blurSection">
+
+      <!-- Title DIV -->
       <div class="title">
         <div class = "pageTitle" id="headerContent">
-          <h1>Geo-Graphics</h1>
+          <h1 class = "geoGraphicsTitle">Geo-Graphics</h1>
         </div>
 
         <div class = "siriImage" id="headerContent">
-          <h1>SIRI</h1>
+          <img class = "siri" src="assets/images/siri.png" alt="">
         </div>
       </div>
+
+
+      <!-- SideBar DIV -->
       <div class="sideBar">
         <div class="link">
           <li>
-              <a class="Navigation-First-Link" href="#itsAMaterialWorld">'It's a Material World'</a>
+              <a class="Navigation-First-Link" href="#whatIsGeographics">'What is Geo-Graphics?'</a>
           </li>
         </div>
         <div class="link">
           <li>
-              <a class="Navigation-Second-Link" href="#theStack">The Stack</a>
+              <a class="Navigation-Second-Link" href="#itsAMaterialWorld">It's a Material World</a>
           </li>
         </div>
 
         <div class="link">
           <li>
-              <a class="Navigation-Third-Link" href="#exploreMore">Explore More</a>
+              <a class="Navigation-Third-Link" href="#purchase">Purchase</a>
           </li>
         </div>
+
+
+        <div class="iPhoneButtonImageClass">
+          <img class = "iPhoneButtonImage" src="assets/images/iPhoneButton.png" alt="">
+        </div>
       </div>
-      <div class="page">
+
+
+      <!-- Container DIV -->
+      <div id = "container" class="pageContent">
 
         <!--  Most of work goes here  -->
         <div class="inner">
 
-          <div id="itsAMaterialWorld">
-          <div class="itsAMaterialWorldContent">
-            <h3>It's A Material World</h3>
+          <div id="whatIsGeographics">
+          <div class="whatIsGeographicsContent">
+            <h3 id = "subjectTitle" class = "whatIsGeoGraphicsHeading">What is Geo-Graphics?</h3>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing. Ut enim blandit volutpat maecenas. Odio tempor orci dapibus ultrices in. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Eget nullam non nisi est sit amet facilisis. Vestibulum lorem sed risus ultricies. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Iaculis nunc sed augue lacus viverra vitae congue. Donec enim diam vulputate ut pharetra sit amet aliquam. Sed viverra tellus in hac habitasse platea dictumst. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Morbi quis commodo odio aenean sed adipiscing diam. Elementum facilisis leo vel fringilla est. Eu turpis egestas pretium aenean pharetra magna ac. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. </p>
+            <p class="informationParagraph">
+              Geo-Graphics is a publication curated and designed by student studying Digital Publishing at Monash University. It is a collection of chapters created by indivudal students that express a stories and interpreations of one of the six layers of ‘The Stack’ - an emergent world planetory operating system that has reorganised the world into a digital copy and is far too be to be uninstalled. Our everyday life subconsicouly revolves around the planetary-wide megastructure through reorgansing and datafying our existance into information.
+            </p>
 
+            <div class="imageContainer">
+              <img class = "stackImage" src="assets/images/stack.png" alt="">
+            </div>
+
+            <div class="imageContainer">
+              <img class = "coverImage" src="assets/images/cover.jpeg" alt="">
+            </div>
+
+            <div class="imageContainer">
+              <img class = "page" src="assets/images/page1.png" alt="">
+            </div>
+
+            <div class="imageContainer">
+              <img class = "page" src="assets/images/page2.png" alt="">
+            </div>
 
           </div>
         </div>
 
 
-        <div id="theStack">
-        <div class="theStackContent">
-          <h3>The Stack</h3>
+        <div id="itsAMaterialWorld">
+        <div class="itsAMaterialWorldContent">
+          <h3 id = "subjectTitle" class = "itsAMaterialWorldHeading">It’s a Material World</h3>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing. Ut enim blandit volutpat maecenas. Odio tempor orci dapibus ultrices in. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Eget nullam non nisi est sit amet facilisis. Vestibulum lorem sed risus ultricies. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Iaculis nunc sed augue lacus viverra vitae congue. Donec enim diam vulputate ut pharetra sit amet aliquam. Sed viverra tellus in hac habitasse platea dictumst. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Morbi quis commodo odio aenean sed adipiscing diam. Elementum facilisis leo vel fringilla est. Eu turpis egestas pretium aenean pharetra magna ac. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. </p>
+          <p class="informationParagraph">
+            This chapter explore the Interface layer of ‘The Stack’. This layer related to the communication between the user and the technology, that is how the user interacts with ‘The Stack’ and how ‘The Stack’ interacts with te user. In particular this chapter is an interpreation of the materials and sizes of our digital world. It tells a story of how a user is drawn in to interact with technology, and the dependancy and assocations the user quickly forms when interacting.
+          </p>
 
+          <div class="imageContainer">
+            <img class = "backgroundsImage" src="assets/images/backgrounds.png" alt="">
+          </div>
+
+          <div class="imageContainer">
+            <img class = "metalIconsImage" src="assets/images/metalIcons.png" alt="">
+          </div>
+
+          <div class="imageContainer">
+            <img class = "loadingIconsImage" src="assets/images/loadingIcons.png" alt="">
+          </div>
 
         </div>
       </div>
 
-      <div id="exploreMore">
-      <div class="exploreMoreContent">
-        <h3>Explore More</h3>
+      <div id="purchase">
+      <div class="purchaseContent">
+        <h3 id = "subjectTitle" class = "purchaseTitle">Purchase</h3>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing. Ut enim blandit volutpat maecenas. Odio tempor orci dapibus ultrices in. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Eget nullam non nisi est sit amet facilisis. Vestibulum lorem sed risus ultricies. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Iaculis nunc sed augue lacus viverra vitae congue. Donec enim diam vulputate ut pharetra sit amet aliquam. Sed viverra tellus in hac habitasse platea dictumst. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Morbi quis commodo odio aenean sed adipiscing diam. Elementum facilisis leo vel fringilla est. Eu turpis egestas pretium aenean pharetra magna ac. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. </p>
+        <div class="imageContainer">
+          <video class="video" loop="true" autoplay="autoplay" id="vid" muted>
+              <source src="assets/images/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+
+        <h2 class = "price">$30 AUD + SHIPPING</h2>
+        <p class = "pp">92pp</p>
+        <p class = "mm">215mm x 279 mm</p>
 
 
       </div>
     </div>
 
-        <!--  End of work    -->
+        <!--  End of inner    -->
+      </div>
+
+      <div class="batteryPack">
+
+        <div class="lowBatteryPackImageContainer">
+          <img class = "batteryImage" src="assets/images/lowBattery.png" alt="">
       </div>
 
 
+
+    </div>
+        <div class="navigation">
+
+            <ul>
+              <li id = "chapter1" class = "chapterLink"><a>Chapter 1</a></li>
+            </ul>
+
+            <ul>
+              <li id = "chapter2" class = "chapterLink"><a>Chapter 2</a></li>
+            </ul>
+
+            <ul>
+              <li id = "chapter3" class = "chapterLink"><a>Chapter 3</a></li>
+            </ul>
+
+            <ul>
+              <li id = "chapter4" class = "chapterLink"><a>Chapter 4</a></li>
+            </ul>
+
+
+        </div>
+
+
+
+    </div>      <!-- End of container DIV -->
+
+  </div>  <!-- End of BLUR DIV -->
+
+
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~ Pop Up Windows ~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <!-- ~~~~~~~~~ Chapter 1 POPUP ~~~~~~~~~ -->
+  <div id = "chapter1PopUpID" class="chapterPopUpBox">
+
+    <div class="windowBar">
+      <div class="windowBarLines">
+        <div id = "chapter1WindowTitle" class="windowTitle">Chapter 1</div>
+      </div>
+      <div id="closeChapter1" class = "chapterClose"> X </div>
+    </div>
+
+    <div class="windowBottomBar">
+      <div class="windowBarLines">
+      </div>
     </div>
 
   </div>
+
+  <!-- ____________________________________ -->
+
+  <!-- ~~~~~~~~~ Chapter 2 POPUP ~~~~~~~~~ -->
+  <div id = "chapter2PopUpID" class="chapterPopUpBox">
+
+    <div class="windowBar">
+      <div class="windowBarLines">
+        <div id = "chapter1WindowTitle" class="windowTitle">Chapter 2</div>
+      </div>
+      <div id="closeChapter2" class = "chapterClose"> X </div>
+    </div>
+
+    <div class="windowBottomBar">
+      <div class="windowBarLines">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ____________________________________ -->
+
+  <!-- ~~~~~~~~~ Chapter 3 POPUP ~~~~~~~~~ -->
+  <div id = "chapter3PopUpID" class="chapterPopUpBox">
+
+    <div class="windowBar">
+      <div class="windowBarLines">
+        <div id = "chapter3WindowTitle" class="windowTitle">Chapter 3</div>
+      </div>
+      <div id="closeChapter3" class = "chapterClose"> X </div>
+    </div>
+
+    <div class="windowBottomBar">
+      <div class="windowBarLines">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ____________________________________ -->
+
+  <!-- ~~~~~~~~~ Chapter 4 POPUP ~~~~~~~~~ -->
+  <div id = "chapter4PopUpID" class="chapterPopUpBox">
+
+    <div class="windowBar">
+      <div class="windowBarLines">
+        <div id = "chapter4WindowTitle" class="windowTitle">Chapter 4</div>
+      </div>
+      <div id="closeChapter4" class = "chapterClose"> X </div>
+    </div>
+
+    <div class="windowBottomBar">
+      <div class="windowBarLines">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ____________________________________ -->
+
+</div>         <!--  End of Main    -->
   </body>
 
 
