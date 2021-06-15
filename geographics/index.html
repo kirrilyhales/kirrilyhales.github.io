@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Boilerplate Starter kit v1.08</title>
+    <title>It's a Material World</title>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
   	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/iPhoneButton.png"/>
   	<script src="assets/js/jquery-3.4.1.min.js"></script>
   	<script src="assets/js/main.js"></script>
 
@@ -22,6 +23,47 @@
     <div class="main">
       <div id="blurSection">
 
+        <div id = "notificationWindow1" class="notificationWindow">
+          <div class="imageNotification">
+            <img id = "notification1Image" class = "notificationImage" src="assets/images/notificationImage1.png" alt="">
+
+          </div>
+
+        </div>
+
+        <div id = "notificationWindow2" class="notificationWindow">
+          <div class="imageNotification">
+            <img id = "notification2Image" class = "notificationImage" src="assets/images/notificationImage4.png" alt="">
+
+          </div>
+
+        </div>
+
+        <div id = "notificationWindow3" class="notificationWindow">
+          <div class="fingerprint1">
+            <img id = "fingerprintImageImage1" class = "fingerImage1" src="assets/images/finger.png" alt="">
+
+          </div>
+
+        </div>
+
+        <div id = "notificationWindow4" class="notificationWindow">
+          <div class="fingerprint">
+            <img id = "fingerprintImageImage2" class = "fingerImage2" src="assets/images/finger.png" alt="">
+
+          </div>
+        </div>
+
+
+
+        <div id = "notificationWindow5" class="notificationWindow">
+            <div class="fingerprint">
+                <img id = "notification5Image" class = "notificationImage2" src="assets/images/Notification1.png" alt="">
+
+            </div>
+        </div>
+
+
       <!-- Title DIV -->
       <div class="title">
         <div class = "pageTitle" id="headerContent">
@@ -36,16 +78,20 @@
 
       <!-- SideBar DIV -->
       <div class="sideBar">
-        <div class="link">
-          <li>
-              <a class="Navigation-First-Link" href="#whatIsGeographics">'What is Geo-Graphics?'</a>
-          </li>
-        </div>
+
         <div class="link">
           <li>
               <a class="Navigation-Second-Link" href="#itsAMaterialWorld">It's a Material World</a>
           </li>
         </div>
+
+
+        <div class="link">
+          <li>
+              <a class="Navigation-First-Link" href="#whatIsGeographics">What is Geo-Graphics?</a>
+          </li>
+        </div>
+
 
         <div class="link">
           <li>
@@ -66,17 +112,49 @@
         <!--  Most of work goes here  -->
         <div class="inner">
 
+          <!-- ~~~~~~~~~~~~~MATERIAL WORLD SECTION~~~~~~~~~~~~~ -->
+          <div id="itsAMaterialWorld">
+          <div class="itsAMaterialWorldContent">
+            <h3 id = "subjectTitle" class = "itsAMaterialWorldHeading">It’s a Material World</h3>
+
+
+            <div class="imageContainer">
+              <img class = "backgroundsImage" src="assets/images/backgrounds.png" alt="">
+            </div>
+
+            <div class="imageContainer">
+              <img class = "metalIconsImage" src="assets/images/metalIcons.png" alt="">
+            </div>
+
+            <div class="imageContainer">
+              <img class = "loadingIconsImage" src="assets/images/loadingIcons.png" alt="">
+            </div>
+
+
+            <p class="informationParagraph">
+              This chapter explores the ‘Interface’ layer of ‘The Stack’. This layer relates to the communication between the user and the technology. 
+            <br></br>
+            ‘It’s a Material World’ was developed to create a story regarding the sizes and materials of the digital world. The digital world is a one that we interact with just as much as we do with the physical nowadays. Our minds are now engrained with expectations on how digital products and their interface looks, feel and respond. We rely on objects and their materials to connect digitally – from the glass on your screen to the wheel on your mouse. Our digital world is precisely scaled and shaped – through buttons, notifications, cursors and applications. We hold a digital world in our hand, but a sudden drop can dent, damage and destroy it.
+            <br></br>
+            We have unintentionally created presumptions on how technology should look and feel to a point where the slightest variation of these ideas and designs, suddenly effect our interactions.  Our digital world is slightly rounded but sharp, smooth and slim, heavy but light, quick but graceful, detailed but simple. This chapter explores these characteristics and aspect and provides the viewer with the realisation on their dependency of their sizes and materials.
+            </p>
+
+          </div>
+        </div>
+
+
+          <!-- ~~~~~~~~~~~~~GEOGRAPHICS SECTION~~~~~~~~~~~~~ -->
           <div id="whatIsGeographics">
           <div class="whatIsGeographicsContent">
             <h3 id = "subjectTitle" class = "whatIsGeoGraphicsHeading">What is Geo-Graphics?</h3>
 
-            <p class="informationParagraph">
-              Geo-Graphics is a publication curated and designed by student studying Digital Publishing at Monash University. It is a collection of chapters created by indivudal students that express a stories and interpreations of one of the six layers of ‘The Stack’ - an emergent world planetory operating system that has reorganised the world into a digital copy and is far too be to be uninstalled. Our everyday life subconsicouly revolves around the planetary-wide megastructure through reorgansing and datafying our existance into information.
-            </p>
-
             <div class="imageContainer">
               <img class = "stackImage" src="assets/images/stack.png" alt="">
             </div>
+
+            <p class="informationParagraph">
+            Geo-Graphics is a publication curated and designed by students studying digital publishing at Monash University. It is a collection of chapters that express stories and interpretations of one of the six layers of ‘The Stack’ – an emergent global operating system that has reorganised the world into a digital copy and is too big to be uninstalled. Our everyday life subconsciously revolves around the planetary-wide megastructure through datafication and the reorganisation of our existence into information.
+            </p>
 
             <div class="imageContainer">
               <img class = "coverImage" src="assets/images/cover.jpeg" alt="">
@@ -94,29 +172,8 @@
         </div>
 
 
-        <div id="itsAMaterialWorld">
-        <div class="itsAMaterialWorldContent">
-          <h3 id = "subjectTitle" class = "itsAMaterialWorldHeading">It’s a Material World</h3>
 
-          <p class="informationParagraph">
-            This chapter explore the Interface layer of ‘The Stack’. This layer related to the communication between the user and the technology, that is how the user interacts with ‘The Stack’ and how ‘The Stack’ interacts with te user. In particular this chapter is an interpreation of the materials and sizes of our digital world. It tells a story of how a user is drawn in to interact with technology, and the dependancy and assocations the user quickly forms when interacting.
-          </p>
-
-          <div class="imageContainer">
-            <img class = "backgroundsImage" src="assets/images/backgrounds.png" alt="">
-          </div>
-
-          <div class="imageContainer">
-            <img class = "metalIconsImage" src="assets/images/metalIcons.png" alt="">
-          </div>
-
-          <div class="imageContainer">
-            <img class = "loadingIconsImage" src="assets/images/loadingIcons.png" alt="">
-          </div>
-
-        </div>
-      </div>
-
+      <!-- ~~~~~~~~~~~~~PURCHASE SECTION~~~~~~~~~~~~~ -->
       <div id="purchase">
       <div class="purchaseContent">
         <h3 id = "subjectTitle" class = "purchaseTitle">Purchase</h3>
@@ -128,10 +185,21 @@
               </video>
         </div>
 
-        <h2 class = "price">$30 AUD + SHIPPING</h2>
-        <p class = "pp">92pp</p>
-        <p class = "mm">215mm x 279 mm</p>
+        <div class="purchasingInformationContainer">
+          <div id = "leftTextContainer"class="textContainer">
+            <h2 class = "price purchaseExtra">$30 AUD + SHIPPING</h2>
+            <p class = "pp purchaseExtra">92pp</p>
+            <p class = "mm purchaseExtra">215mm x 279 mm</p>
+          </div>
 
+          <div id = "rightTextContainer"class="textContainer">
+            <div class="buyNowButton">
+                <li>
+                    <a class="buyNowText" href="https://g-e-o.club/">BUY NOW</a>
+                </li>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -151,19 +219,19 @@
         <div class="navigation">
 
             <ul>
-              <li id = "chapter1" class = "chapterLink"><a>Chapter 1</a></li>
+              <li id = "chapter1" class = "chapterLink"><a>Lisa Vullings</a></li>
             </ul>
 
             <ul>
-              <li id = "chapter2" class = "chapterLink"><a>Chapter 2</a></li>
+              <li id = "chapter2" class = "chapterLink"><a>Joel Tyler</a></li>
             </ul>
 
             <ul>
-              <li id = "chapter3" class = "chapterLink"><a>Chapter 3</a></li>
+              <li id = "chapter3" class = "chapterLink"><a>Amelia Stockman</a></li>
             </ul>
 
             <ul>
-              <li id = "chapter4" class = "chapterLink"><a>Chapter 4</a></li>
+              <li id = "chapter4" class = "chapterLink"><a>Maddy Andrews</a></li>
             </ul>
 
 
@@ -186,10 +254,23 @@
 
     <div class="windowBar">
       <div class="windowBarLines">
-        <div id = "chapter1WindowTitle" class="windowTitle">Chapter 1</div>
+        <div id = "chapter1WindowTitle" class="windowTitle">Lisa Vullings</div>
       </div>
       <div id="closeChapter1" class = "chapterClose"> X </div>
     </div>
+
+    <div class="popupImageContainer">
+      <div class="popUpImage">
+
+
+        <a href="https://lisa-vul.github.io/geographics">
+          <img class = "capcha" src="assets/images/captcha.png" alt="">
+        </a>
+
+
+        </div>
+
+      </div>
 
     <div class="windowBottomBar">
       <div class="windowBarLines">
@@ -205,9 +286,19 @@
 
     <div class="windowBar">
       <div class="windowBarLines">
-        <div id = "chapter1WindowTitle" class="windowTitle">Chapter 2</div>
+        <div id = "chapter1WindowTitle" class="windowTitle">Joel Tyler</div>
       </div>
       <div id="closeChapter2" class = "chapterClose"> X </div>
+    </div>
+
+    <div class="popupImageContainer">
+      <div class="popUpImage">
+
+        <a href="http://jtyl0002.github.io/geographics">
+                <img id = "heat" class = "heatImage" src="assets/images/heat.png">
+        </a>
+
+      </div>
     </div>
 
     <div class="windowBottomBar">
@@ -224,9 +315,17 @@
 
     <div class="windowBar">
       <div class="windowBarLines">
-        <div id = "chapter3WindowTitle" class="windowTitle">Chapter 3</div>
+        <div id = "chapter3WindowTitle" class="windowTitle">Amelia Stockman</div>
       </div>
       <div id="closeChapter3" class = "chapterClose"> X </div>
+    </div>
+
+    <div class="popupImageContainer">
+      <div class="popUpImage">
+        <a href= "https://ameliastockman.github.io/geographics/">
+              <img id = "lunar" class = "lunarVehicle" src="assets/images/lunarVehicle.png">
+        </a>
+      </div>
     </div>
 
     <div class="windowBottomBar">
@@ -243,9 +342,19 @@
 
     <div class="windowBar">
       <div class="windowBarLines">
-        <div id = "chapter4WindowTitle" class="windowTitle">Chapter 4</div>
+        <div id = "chapter4WindowTitle" class="windowTitle">Maddy Andrews</div>
       </div>
       <div id="closeChapter4" class = "chapterClose"> X </div>
+    </div>
+
+    <div class="popupImageContainer">
+      <div class="popUpImage">
+        <a href="https://maddy-andrews.github.io/geographics/">
+            <img id = "simsEyes" class = "simsEyesImage" src="assets/images/simsEyes.jpg">
+
+        </a>
+
+      </div>
     </div>
 
     <div class="windowBottomBar">
@@ -256,6 +365,8 @@
   </div>
 
   <!-- ____________________________________ -->
+
+
 
 </div>         <!--  End of Main    -->
   </body>
